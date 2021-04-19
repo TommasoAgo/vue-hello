@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+
+    <!-- Vue Box -->
+    <div id="root">
+        <div class="ciao-vue">
+            <h1 :class='textColor'>{{message}}</h1>
+            <button @click="miaFunzione">Certo che si!</button>
+
+            <div class="img-container">
+                <img id="image" class="hidden" :src="image" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
